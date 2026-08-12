@@ -17,3 +17,15 @@ botaoAlterarVerde.addEventListener('click', () => {
 botaoAlterarAzul.addEventListener('click', () => {
     TextoAzul.style.color = 'blue';
 });
+
+const botaoModo = document.getElementById('btnModo');
+
+botaoModo.addEventListener('click', () => {
+    if (document.body.style.background === 'black') {
+        document.body.style.background = '';
+        document.body.style.color = '';
+    } else {
+        document.body.style.background = 'black';
+        document.body.style.color = 'white';
+    }
+}); 
