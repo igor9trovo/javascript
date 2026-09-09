@@ -17,11 +17,11 @@ botaoCalcular.addEventListener('click', () => {
         const resto = Number(numero1.value) % Number(numero2.value);
         const potencia = Number(numero1.value) ** Number(numero2.value);
 
-        textoSoma.innerHTML = numero1.value + '+' + numero2.value + '=' + soma;
-        textoSubtracao.innerHTML = numero1.value + '-' + numero2.value + '=' + subtracao;
-        textoMultiplicacao.innerHTML = numero1.value + '*' + numero2.value + '=' + multiplicacao;
-        textoDivisao.innerHTML = numero1.value + '/' + numero2.value + '=' + divisao.toFixed(2);
-        textoResto.innerHTML = numero1.value + '%' + numero2.value + '=' + resto;
+        textoSoma.innerHTML = numero1.value + ' +' + numero2.value + ' = ' + soma;
+        textoSubtracao.innerHTML = numero1.value + ' - '  + numero2.value + ' = ' + subtracao;
+        textoMultiplicacao.innerHTML = numero1.value + ' * ' + numero2.value + ' = ' + multiplicacao;
+        textoDivisao.innerHTML = numero1.value + ' / ' + numero2.value + ' = ' + divisao.toFixed(2);
+        textoResto.innerHTML = numero1.value + ' % ' + numero2.value + ' = ' + resto;
         textoPotencia.innerHTML = numero1.value + '<sup>' + numero2.value + '</sup> =' + potencia;
     }
 })
