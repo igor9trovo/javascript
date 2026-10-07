@@ -1,0 +1,371 @@
+/* ================================
+   ESTILO GERAL - AULA 02
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* CONTAINER PRINCIPAL */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+/* TÍTULOS */
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+h2 {
+    color: #1e40af;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #334155;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* LINHA/SEPARADOR */
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 25px 0;
+}
+
+/* INPUTS */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* BOTÕES */
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* LINKS */
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CARDS */
+
+.card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+/* RESULTADOS */
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eff6ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+    min-height: 20px;
+}
+
+/* QUALQUER ELEMENTO COM CLASSE RESULTADO */
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eff6ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+}
+
+/* MENSAGEM DE SUCESSO */
+
+.sucesso {
+    color: #166534;
+    background-color: #dcfce7;
+    border: 1px solid #86efac;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* MENSAGEM DE ERRO */
+
+.erro {
+    color: #991b1b;
+    background-color: #fee2e2;
+    border: 1px solid #fca5a5;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* LISTAS */
+
+ul,
+ol {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* TABELAS */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tr:hover {
+    background-color: #eff6ff;
+}
+
+/* LABELS */
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #334155;
+}
+
+/* CHECKBOX E RADIO */
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+    box-shadow: none;
+}
+
+/* IMAGENS */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ÁREA DE CÓDIGO */
+
+pre {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+/* BOTÃO SECUNDÁRIO */
+
+.btn-secundario {
+    background-color: #64748b;
+}
+
+.btn-secundario:hover {
+    background-color: #475569;
+}
+
+/* BOTÃO DE PERIGO */
+
+.btn-perigo {
+    background-color: #dc2626;
+}
+
+.btn-perigo:hover {
+    background-color: #b91c1c;
+}
+
+/* BOTÃO DE SUCESSO */
+
+.btn-sucesso {
+    background-color: #16a34a;
+}
+
+.btn-sucesso:hover {
+    background-color: #15803d;
+}
+
+/* FLEX */
+
+.flex {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* CENTRALIZAR */
+
+.centralizado {
+    text-align: center;
+}
+
+/* ESPAÇAMENTOS */
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
